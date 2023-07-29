@@ -8,13 +8,14 @@ body {
   margin: 0 auto;
 }
 section {
+  max-width: 100%;
   margin: 0 auto;
-  padding: 90px;
+  padding: 100px;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 0;
+  grid-gap: 64px;
 }
 .grid2 {
   display: grid;
@@ -23,7 +24,7 @@ section {
 .grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0;
+  grid-gap: 30px;
 }
 .grid4 {
   display: grid;
@@ -221,7 +222,7 @@ section.secundary {
   margin-top: 20px;
 }
 .photos {
-  padding-bottom: 0;
+  padding-bottom: 30px;
 }
 @media (max-width: 900px) {
   header {
@@ -258,7 +259,8 @@ section.secundary {
     grid-gap: 32px;
   }
   .grid4 {
-    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
   .embed {
     aspect-ratio: 16 / 9;
