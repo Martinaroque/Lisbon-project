@@ -10,11 +10,17 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
 }
 
 header {
@@ -68,7 +74,6 @@ footer {
     url("../imagens/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -97,6 +102,41 @@ footer a {
   opacity: 0.7;
   text-decoration: none;
 }
+.second {
+  width: 500px;
+  height: 300px;
+}
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #70659c;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 
 @media (max-width: 900px) {
   header {
@@ -113,5 +153,16 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
