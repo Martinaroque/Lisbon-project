@@ -258,8 +258,7 @@ section.secundary {
     grid-gap: 32px;
   }
   .grid4 {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
+    grid-gap: 0;
   }
   .embed {
     aspect-ratio: 16 / 9;
