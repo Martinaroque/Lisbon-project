@@ -25,6 +25,11 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 55px;
 }
+.card-header.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../imagens/lisbon-main.jpg");
@@ -169,9 +174,10 @@ section.secundary {
 }
 
 .img-responsive {
-  max-width: 100px;
+  width: 200px;
   height: 100px;
   display: block;
+  margin: 0;
 }
 .btn {
   display: block;
@@ -185,6 +191,20 @@ section.secundary {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
+}
+.embed {
+  aspect-ratio: 1/1;
+  width: 200px;
+}
+.embed1 {
+  aspect-ratio: 1/1;
+  width: 200px;
+  height: 100px;
+}
+.embed2 {
+  aspect-ratio: 1/1;
+  width: 200px;
+  height: 100px;
 }
 
 @media (max-width: 900px) {
@@ -220,5 +240,11 @@ section.secundary {
   .grid3 {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+  .img-responsive {
+    display: none;
   }
 }
